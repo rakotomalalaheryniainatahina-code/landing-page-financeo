@@ -4,6 +4,7 @@ import { Wallet, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Yo
 import { useDarkMode } from '@/context/darkModeContext';
 import Image from 'next/image';
 import Images from '@/constant/images';
+import Link from 'next/link';
 
 
 const Footer = () => {
@@ -36,15 +37,20 @@ const Footer = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
           {/* Colonne Logo et Description - Plus large */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="flex items-center space-x-3">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-[#0D87E8] via-[#00C896] to-[#7EE5A8] rounded-xl blur-lg opacity-30"></div>
-                <Image src={Images.logo} height={500} width={500} alt="Financeo Logo" className='w-12 relative z-10' />
+            <div>
+              <Link href={'/'} >
+              <div className="flex items-center space-x-3">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#0D87E8] via-[#00C896] to-[#7EE5A8] rounded-xl blur-lg opacity-30"></div>
+                  <Image src={Images.logo} height={500} width={500} alt="Financeo Logo" className='w-12 relative z-10' />
+                </div>
+                <p className='font-black text-2xl bg-gradient-to-r from-[#0D87E8] via-[#00C896] to-[#7EE5A8] bg-clip-text text-transparent'>
+                  financeo
+                </p>
               </div>
-              <p className='font-black text-2xl bg-gradient-to-r from-[#0D87E8] via-[#00C896] to-[#7EE5A8] bg-clip-text text-transparent'>
-                financeo
-              </p>
+            </Link>
             </div>
+
             <p className={`text-base ${isDark ? 'text-gray-400' : 'text-gray-600'} leading-relaxed max-w-md`}>
               Votre plateforme de confiance pour gérer vos finances et investir dans les cryptomonnaies en toute sécurité.
             </p>

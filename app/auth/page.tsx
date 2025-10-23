@@ -43,8 +43,10 @@ const AuthPage = () => {
                 <div className="text-center mb-8">
                     <div className="inline-flex relative items-center justify-center w-20">
                         <div className="relative">
-                            <div className="absolute inset-0 bg-gradient-to-r from-[#0D87E8] via-[#00C896] to-[#7EE5A8] rounded-xl blur-md opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
-                            <Image width={500} height={500} src={Images.logo} alt="Financeo Logo" className='w-10 relative z-10 transform group-hover:scale-110 transition-transform duration-300' />
+                            <Link href={'/'} >
+                                <div className="absolute inset-0 bg-gradient-to-r from-[#0D87E8] via-[#00C896] to-[#7EE5A8] rounded-xl blur-md opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+                                <Image width={500} height={500} src={Images.logo} alt="Financeo Logo" className='w-10 relative z-10 transform group-hover:scale-110 transition-transform duration-300' />
+                            </Link>
                         </div>
                     </div>
                     <h1 className="text-4xl font-bold bg-gradient-to-r from-[#0D87E8] via-[#00C896] to-[#7EE5A8] bg-clip-text text-transparent mb-3">
