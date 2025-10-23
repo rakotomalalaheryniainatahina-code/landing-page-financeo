@@ -73,7 +73,7 @@ const Navbar = () => {
         {/* Actions à droite */}
         <div className="flex items-center space-x-3">
           {/* Inscription Button */}
-          <Link href={'/auth'} >
+          <Link href={'/login'} >
             <button className="hidden sm:flex items-center space-x-2 px-5 py-2.5 bg-gradient-to-r from-[#0D87E8] via-[#00C896] to-[#7EE5A8] text-white rounded-xl text-sm font-semibold transition-all hover:shadow-xl hover:shadow-[#00C896]/20 hover:scale-105 duration-300">
               <span>Inscription</span>
             </button>
@@ -192,7 +192,7 @@ const Navbar = () => {
             >
               Avantages
             </a>
-            <Link href={'/auth'}>
+            <Link href={'/login'}>
               <button className="w-full px-5 py-3 bg-gradient-to-r from-[#0D87E8] via-[#00C896] to-[#7EE5A8] text-white rounded-xl text-sm font-semibold transition-all hover:shadow-xl hover:scale-105 duration-300">
                 Inscription
               </button>
