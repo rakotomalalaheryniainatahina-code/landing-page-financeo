@@ -5,6 +5,7 @@ import { Download, Moon, Sun, Menu, X } from 'lucide-react';
 import { useDarkMode } from '@/context/darkModeContext';
 import Image from 'next/image';
 import Images from '@/constant/images';
+import Link from 'next/link';
 
 const Navbar = () => {
   const { isDark, toggleDarkMode } = useDarkMode();
@@ -72,9 +73,11 @@ const Navbar = () => {
         {/* Actions à droite */}
         <div className="flex items-center space-x-3">
           {/* Inscription Button */}
-          <button className="hidden sm:flex items-center space-x-2 px-5 py-2.5 bg-gradient-to-r from-[#0D87E8] via-[#00C896] to-[#7EE5A8] text-white rounded-xl text-sm font-semibold transition-all hover:shadow-xl hover:shadow-[#00C896]/20 hover:scale-105 duration-300">
-            <span>Inscription</span>
-          </button>
+          <Link href={'/auth'} >
+            <button className="hidden sm:flex items-center space-x-2 px-5 py-2.5 bg-gradient-to-r from-[#0D87E8] via-[#00C896] to-[#7EE5A8] text-white rounded-xl text-sm font-semibold transition-all hover:shadow-xl hover:shadow-[#00C896]/20 hover:scale-105 duration-300">
+              <span>Inscription</span>
+            </button>
+          </Link>
 
           {/* Download Dropdown */}
           <div className="relative">
@@ -189,9 +192,11 @@ const Navbar = () => {
             >
               Avantages
             </a>
-            <button className="w-full px-5 py-3 bg-gradient-to-r from-[#0D87E8] via-[#00C896] to-[#7EE5A8] text-white rounded-xl text-sm font-semibold transition-all hover:shadow-xl hover:scale-105 duration-300">
-              Inscription
-            </button>
+            <Link href={'/auth'}>
+              <button className="w-full px-5 py-3 bg-gradient-to-r from-[#0D87E8] via-[#00C896] to-[#7EE5A8] text-white rounded-xl text-sm font-semibold transition-all hover:shadow-xl hover:scale-105 duration-300">
+                Inscription
+              </button>
+            </Link>
           </div>
         </div>
       )}
