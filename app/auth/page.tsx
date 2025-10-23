@@ -65,7 +65,7 @@ const AuthPage = () => {
                     {/* Google Login Button */}
                     <button
                         onClick={handleGoogleLogin}
-                        className="w-full flex items-center justify-center gap-4 py-5 px-6 bg-white border-2 border-gray-300 rounded-2xl font-semibold text-gray-800 text-lg hover:border-[#00C896] hover:shadow-2xl hover:scale-105 transition-all duration-300 mb-6"
+                        className="w-full flex items-center justify-center gap-4 py-5 px-6 bg-white border-2 border-gray-300 rounded-2xl font-semibold text-gray-800 text-sm lg:text-lg hover:border-[#00C896] hover:shadow-2xl hover:scale-105 transition-all duration-300 mb-6"
                     >
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
