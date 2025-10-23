@@ -1,3 +1,5 @@
+"use client"
+
 import { Cookie, Calendar, Shield, Settings, Eye, BarChart3, Target, CheckCircle, ArrowLeft, Info } from 'lucide-react';
 import { useState } from 'react';
 
